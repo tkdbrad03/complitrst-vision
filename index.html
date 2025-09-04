@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CompliTrst™ — Listen to the Vision</title>
+  <meta name="description" content="A concise, 7‑minute narrated overview of CompliTrst™ and the Partner Agency Program.">
+  <meta name="theme-color" content="#027361"/>
+  <meta property="og:title" content="CompliTrst™ — Listen to the Vision">
+  <meta property="og:description" content="A concise, 7‑minute narrated overview of CompliTrst™ and the Partner Agency Program.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/complitrst-logo.png">
+  <style>
+    :root{
+      --brand-green:#027361;
+      --brand-gold:#C8A83D;
+      --ink:#1a1a1a;
+      --muted:#5f6b6a;
+      --bg:#f6f7f8;
+      --card:#ffffff;
+      --shadow:0 8px 24px rgba(0,0,0,0.08);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;line-height:1.5}
+    a{color:var(--brand-green);text-decoration:none}
+    .wrap{max-width:960px;margin:0 auto;padding:24px}
+    header{
+      display:flex;align-items:center;gap:14px;padding:18px 0 8px 0;
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;
+    }
+    .brand img{height:40px;width:auto;display:block}
+    .brand .name{font-weight:700;letter-spacing:.2px;color:var(--brand-green)}
+    .hero{
+      padding:12px 0 6px 0;border-bottom:2px solid var(--brand-green);
+      margin-bottom:18px;
+    }
+    .title{font-size:28px;font-weight:800;margin:6px 0 2px 0}
+    .subtitle{font-size:16px;color:var(--muted);margin:0 0 8px 0}
+    .card{
+      background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:20px;margin:18px 0;
+    }
+    .audio-card .label{font-size:14px;color:var(--muted);margin-bottom:8px}
+    audio{width:100%;height:42px;outline:none;border-radius:10px;background:#eee}
+    .cta{
+      display:flex;flex-wrap:wrap;gap:12px;margin-top:14px
+    }
+    .btn{
+      display:inline-block;padding:12px 16px;border-radius:10px;font-weight:600;font-size:16px;
+      border:1px solid transparent;transition:transform .03s ease, box-shadow .2s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{background:var(--brand-green);color:#fff}
+    .btn-primary:hover{box-shadow:0 6px 18px rgba(2,115,97,.25)}
+    .btn-outline{border-color:var(--brand-gold);color:var(--brand-green);background:#fff}
+    .section-title{font-size:18px;font-weight:700;margin:12px 0 6px 0;color:var(--brand-green)}
+    details{
+      background:#ffffff;border-radius:12px;border:1px solid #e9eceb;padding:14px 16px
+    }
+    details summary{cursor:pointer;font-weight:600;color:var(--ink)}
+    footer{
+      text-align:center;color:#8a8f8e;font-size:13px;margin:30px 0 12px 0
+    }
+    /* Mobile tune-ups */
+    @media (max-width:640px){
+      .title{font-size:22px}
+      .subtitle{font-size:14px}
+      .btn{width:100%;text-align:center}
+      header{justify-content:space-between}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Replace the src if you host the logo elsewhere -->
+        <img src="assets/complitrst-logo.png" alt="CompliTrst logo">
+        <div class="name">CompliTrst™</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 class="title">Listen to the 7‑minute vision behind CompliTrst™</h1>
+      <p class="subtitle">This narrated overview explains what we built, who it’s for, and how the Partner Agency Program works.</p>
+    </section>
+
+    <section class="card audio-card" aria-label="Narrated overview">
+      <div class="label">Press play</div>
+      <!--
+        HOW TO USE:
+        1) Place your audio file in /assets as overview.mp3 OR paste a hosted URL in the src attribute below.
+        2) For video instead of audio, replace the <audio> element with a <video controls playsinline> ...
+      -->
+      <audio id="overview" controls preload="metadata" src="assets/overview.mp3"></audio>
+
+      <div class="cta">
+        <!-- Update this booking link as needed -->
+        <a class="btn btn-primary" href="https://tidycal.com/complitrst/complitrst-partner-opportunity" target="_blank" rel="noopener">Book a 15‑min call</a>
+        <a class="btn btn-outline" href="#transcript">Read transcript</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">What you will learn</h2>
+      <ul>
+        <li>How CompliTrst streamlines documentation and audit readiness</li>
+        <li>Why the Partner Agency Program creates real revenue for healthcare pros</li>
+        <li>Where a partner fits into the CompliTrst ecosystem</li>
+      </ul>
+    </section>
+
+    <section id="transcript" class="card">
+      <h2 class="section-title">Transcript</h2>
+      <!-- Paste the narration transcript here. You can keep this section collapsed by default if you prefer:
+           <details open> or <details>
+      -->
+      <details>
+        <summary>Show transcript</summary>
+        <div id="transcript-body" style="margin-top:10px; color:#333;">
+          <!-- Replace this with your real transcript -->
+          <p>[Transcript goes here. Paste your 7‑minute narration text for accessibility and SEO.]</p>
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      © 2025 <strong>CompliTrst™</strong>. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Optional enhancement: remember playback position on this device.
+    (function(){
+      var player = document.getElementById('overview');
+      if(!player) return;
+      var key = 'complitrst_overview_pos_v1';
+      // Restore position
+      var saved = window.localStorage.getItem(key);
+      if(saved){
+        try{ player.currentTime = parseFloat(saved) || 0; }catch(e){}
+      }
+      // Save position as user listens
+      player.addEventListener('timeupdate', function(){
+        try{ window.localStorage.setItem(key, String(player.currentTime)); }catch(e){}
+      });
+    })();
+  </script>
+</body>
+</html>
